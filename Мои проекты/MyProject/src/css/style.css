@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+   }
+.body{
+    font-family: Tahoma, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+}
+.section{
+    padding: 30px 10%;
+}
+.main{
+    margin-top: 80px;
+}
+.header{
+    margin-top: 80px;
+    font-style: 24px;
+    text-align: center;
+}
+.header span{
+    display: block;
+    font-weight: 300;
+}
+.header strong{
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+.video, .form{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+.form{
+     border: 5px solid #2727D9;
+}
+
+.flex{
+	justify-content: space-between; 
+	align-items: center;
+	
+}
+ 

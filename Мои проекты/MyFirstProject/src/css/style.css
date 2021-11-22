@@ -1,0 +1,125 @@
+ *{
+ 	box-sizing: border-box;
+ }
+ body {
+ 	background-color: grey
+ }
+ .menu-top{
+ 	background-color: #3EB160;
+ 	position: fixed;
+ 	height: 30px;
+ 	width: 100%;
+ 	display: block;
+ 	/* left: 40%; */
+ 	top:0; /* добавил свойство top */
+ }
+ h1{
+ 	color: blue;
+ 	text-shadow: white 2px 3px 4px;
+	margin-top: 50px;
+}
+ .heading {
+ 	font-style: italic;
+ 	font-family: "Segoe script";
+ }
+ .prava {
+ 	color: white
+
+ }
+ .block{
+ 	text-shadow: white 2px 3px 4px
+ }
+ .leto{
+ 	text-shadow: yellow 2px 3px 4px
+ }
+ .stix{
+ 	text-align: center;
+ }
+ em{
+ 	text-decoration: underline;
+ 	color: rgba(255,255,255,0.7);
+ }
+ h3{
+ 	color: #0b28b8
+ }
+ .radio{
+ 	display: block;
+ 	text-align: right;
+ }
+ .flag{
+ 	background: #000;
+ 	/*display: inline-block;*/
+ 	/*width: 50%;*/
+ 	height: 100px;
+ 	color: #18D5FF;
+ 	border: 5px double white;
+ 	/*border-top: 1px groove;*/
+ }
+ .mini-box{
+ 	width: 100%;
+ 	height: 33.5%;
+ 	background: #FAFAFA;
+ 	text-transform: uppercase;
+ 	text-align: center;
+ 	padding: 5px 5px 3px 50px;
+ }
+ .white{
+ 	background: white;
+ }
+ .blue{
+ 	background: #1121DF;
+ }
+ .red{
+ 	background: rgb(223,21,17);
+ }
+ .box2{
+ 	text-align: right;
+ 	padding: 5px 5px 3px 50px;
+ 	border: 2px dotted green;
+ 	border: 2px solid green;
+ 	margin-top: 10px;
+ 	width: 50%;
+ 	/* display: inline-block; */
+ }
+ .wrapper{
+	display: flex;
+	align-items: flex-end;
+ }
+ .adaptiv{
+	 text-transform: uppercase;
+ }
+ @media(max-width: 900px){
+	.adaptiv{
+		text-transform: lowercase;
+	 } /*адаптация под экран менее 901px ширина */
+ }
+ @media(max-width: 400px){
+	.adaptiv{
+		text-transform: capitalize;
+	 } 
+ }
+ .flex{
+	border: 10px groove #3EB160; /*рамка */
+	display: flex;
+	height: 300px;
+	justify-content: space-around;  /*свойство расстановка элементов внутри родителя, вокруг элементов */
+	justify-content: space-between;  /*свойство расстановка элементов внутри родителя, между элементами*/
+	justify-content: center;  /*свойство расстановка элементов внутри родителя, элементы по центру*/
+	justify-content: flex-end;  /*свойство расстановка элементов внутри родителя, элементы по правому краю*/
+	justify-content: flex-start; /*свойство расстановка элементов внутри родителя, элементы по левому краю*/
+	align-items: flex-end; /*по вертикали */
+	align-items: flex-start;
+	align-items: center;
+	flex-wrap: wrap; /*перенос строки дочерних элементов внутри родителя */
+	 
+	/*Направление блоков, свойства justify-content и align-items меняются функционалом по направлению */
+	flex-direction: column-reverse;
+	flex-direction: row-reverse; 
+	flex-direction: column;
+ }
+ .element{
+	 background-color: blue;
+	 color: antiquewhite;
+	 height: 50px;
+	 width: 500px;
+ }
